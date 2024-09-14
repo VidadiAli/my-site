@@ -1,0 +1,84 @@
+.my-stories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+}
+
+.my-stories>.this-stories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: calc((100% / 3) - 10px);
+}
+
+.my-stories>.this-stories>.this-stories-head {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    font-size: 85%;
+}
+
+.my-stories>.this-stories>.this-stories-head>.this-stories-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.my-stories>.this-stories>.this-stories-head>.this-stories-icons>div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.my-stories>.this-stories>.this-stories-head>.this-stories-icons>div>.stories-icons {
+    color: var(--color1);
+    width: 20px;
+    height: 20px;
+}
+
+.my-stories>.this-stories>.this-stories-head>.this-stories-icons>div>span {
+    color: gray;
+}
+
+.my-stories>.this-stories>.this-stories-head>h2 {
+    color: var(--color1);
+}
+
+.my-stories>.this-stories>img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.my-stories>.this-stories>p {
+    width: 100%;
+    height: 21vh;
+    overflow: hidden;
+    text-align: justify;
+    font-size: .9rem;
+}
+
+.my-stories>.this-stories>p>a {
+    color: var(--color1) !important;
+}
+
+.my-stories>.this-stories>button {
+    background-color: var(--color1);
+    color: white;
+    width: 100%;
+    border: 1px solid var(--color1);
+    border-radius: 4px;
+    transition: .5s;
+    padding: 12px 0;
+}
+
+.my-stories>.this-stories>button:hover {
+    background-color: white;
+    color: var(--color1);
+}

@@ -1,0 +1,149 @@
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10px 5px;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: var(--color2);
+    overflow: auto;
+}
+
+.left>.sosial {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.left>.sosial>li {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px;
+    border-left: 2px solid var(--color1);
+}
+
+.left>.sosial>li>span {
+    color: var(--color1);
+    font-size: 90%;
+    font-weight: 700;
+}
+
+.left>.sosial>li>div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.left>.sosial>li>div>a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 6px;
+    background: linear-gradient(110deg, var(--color1) 40%, rgb(5, 54, 94));
+    border-radius: 50%;
+    color: black;
+    font-style: italic;
+    border-bottom: 1px solid var(--color1);
+    border-right: 1px solid var(--color1);
+}
+
+.left>.sosial>li>div>a>.sosial-icons {
+    width: 15px;
+    height: 15px;
+    color: white;
+}
+
+.left>.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left>.navbar>li {
+    width: min-content;
+    background-color: rgb(250, 250, 250);
+    padding: 10px 20px;
+    transition: .5s;
+    font-size: 95%;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px lightgray;
+    white-space: nowrap;
+    scale: 1;
+}
+
+.left>.navbar>li>a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    color: var(--color1);
+    cursor: pointer;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.left>.navbar>li>a>.menu-icon {
+    color: var(--color1);
+    width: 18px;
+    height: 18px;
+}
+
+.left>.navbar>li:hover {
+    background-color: rgb(240, 240, 240);
+    scale: 1.02;
+}
+
+.left>.navbar>li:hover>a {
+    color: rgb(14, 95, 161);
+}
+
+.left>.navbar>.single-li {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: rgb(132, 132, 132);
+    border: none;
+    box-shadow: 0 0 0 transparent;
+}
+
+.left>.navbar>.single-li:hover {
+    background-color: transparent;
+    scale: 1;
+}
+
+
+.come-go {
+    left: 0% !important;
+    z-index: 100000;
+    height: calc(100vh - 50px);
+    top: 50px;
+    box-shadow: 450px 0px rgba(0, 0, 0, .4);
+}
+
+@media(max-width: 1050px) {
+    .left {
+        gap: 10px;
+    }
+
+    .left>.navbar>li>a {
+        font-size: .8rem
+    }
+
+    .left>.navbar>.single-li {
+        font-size: .9rem;
+    }
+}
+
+
+@media(max-width: 650px) {
+    .come-go {
+        box-shadow: 250px 0px rgba(0, 0, 0, .4);
+    }
+}

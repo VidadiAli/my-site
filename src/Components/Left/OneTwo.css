@@ -1,0 +1,25 @@
+.one-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px;
+    gap: 10px;
+}
+
+.one-two>div {
+    width: calc(50% - 5px);
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    box-shadow: 0px 3px 5px lightgray;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.one-two>div>p {
+    text-align: justify;
+}
+
+.one-two>div>span {
+    margin-left: auto;
+}

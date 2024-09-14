@@ -1,0 +1,78 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(4, 67, 139);
+    padding: 20px;
+    margin: 0 5px;
+    width: calc(100% - 10px);
+    margin-top: 40px;
+}
+
+.footer>.footer-ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer>.footer-ul>li {
+    width: calc(50% - 15px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer>.footer-ul>li>span {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.footer>.footer-ul>li>div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer>.footer-ul>li>div>a {
+    color: rgb(215, 215, 215);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 1px gray;
+    width: min-content;
+    white-space: nowrap;
+    padding: 0 4px 1px 2px;
+    transition: .5s;
+}
+
+.footer>.footer-ul>li>div>a:hover {
+    color: white;
+}
+
+.footer>.footer-ul>li>div>a>.sosial-icons {
+    color: white;
+}
+
+
+
+
+@media (max-width: 1050px) {
+    .footer {
+        margin: 0;
+        font-size: 90%;
+    }
+    .footer>.footer-ul>li>span{
+        font-size: 120%;
+    }
+}
+
+@media(max-width: 750px){
+    .footer{
+        width: 100%;
+    }
+    .footer>.footer-ul>li {
+        width: 100%;
+        gap: 15px;
+    }
+}
