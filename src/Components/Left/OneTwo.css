@@ -23,3 +23,25 @@
 .one-two>div>span {
     margin-left: auto;
 }
+
+
+@media(max-width: 1050px) {
+    .one-two {
+        padding: 5px 10px;
+    }
+}
+
+
+
+@media(max-width: 750px) {
+    .one-two {
+        padding: 5px;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .one-two>div {
+        width: 100%;
+    }
+}

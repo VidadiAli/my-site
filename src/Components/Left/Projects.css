@@ -56,9 +56,37 @@
 .all-projects>.all-projects-element>.iframe-container>iframe {
     width: 200%;
     /* Saytın tam ölçüsünü göstərmək üçün */
-    height: 700px;
+    height: 900px;
     border: none;
     /* Kənar xəttləri silmək üçün */
     scale: .5;
     transform-origin: 0 0;
+}
+
+
+@media(max-width: 1050px) {
+    .all-projects {
+        padding: 0 10px;
+    }
+}
+
+
+@media(max-width: 750px) {
+    .all-projects {
+        padding: 0 5px;
+    }
+}
+
+@media(max-width: 750px) {
+    .all-projects {
+        gap: 20px;
+    }
+
+    .all-projects>.all-projects-element {
+        width: 100%;
+    }
+
+    .all-projects>.all-projects-element>.iframe-container {
+        height: 60vh;
+    }
 }

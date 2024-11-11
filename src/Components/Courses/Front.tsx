@@ -33,7 +33,7 @@ const Front = () => {
                             <span>Növbəti aylar hər dərs 3-4 saat</span>
                             <span>Mənimsəmə qabiliyyətinə əsasən təqribən 6 ay</span>
                             <span>Daimi ev tapşırğı</span>
-                            <span>Hər ay kiçik, orta və böyük miqyaslı layihələr (aya əsasən dəişkən)</span>
+                            <span>Hər ay kiçik, orta və böyük miqyaslı layihələr</span>
                         </div>
                     </div>
                     <div>

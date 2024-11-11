@@ -2,8 +2,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 10px;
-    gap: 10px;
+    padding: 10px 0;
+    gap: 5px;
 }
 
 .my-stories>.this-stories {
@@ -12,7 +12,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    width: calc((100% / 3) - 10px);
+    width: calc((100% / 3) - 5px);
+    box-shadow: 0 0 2px rgb(232, 232, 232);
+    padding: 5px;
 }
 
 .my-stories>.this-stories>.this-stories-head {
@@ -81,4 +83,37 @@
 .my-stories>.this-stories>button:hover {
     background-color: white;
     color: var(--color1);
+}
+
+
+@media(max-width: 1050px) {
+    .my-stories {
+        padding: 10px;
+    }
+
+    .my-stories>.this-stories {
+        width: calc(50% - 5px);
+    }
+}
+
+@media(max-width: 750px) {
+    .my-stories {
+        padding: 10px 5px;
+    }
+
+    .my-stories>.this-stories>img {
+        height: 350px;
+    }
+}
+
+
+@media(max-width: 450px) {
+    .my-stories {
+        gap: 10px;
+    }
+
+    .my-stories>.this-stories {
+        width: 100%;
+        padding: 10px;
+    }
 }

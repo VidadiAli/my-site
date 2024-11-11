@@ -53,7 +53,7 @@ const Stories = () => {
                                 </div>
                                 <h2>{e.NewsName}</h2>
                             </div>
-                            <img src={e.NewsCover} alt={e.NewsName} />
+                            <img src={e.NewsCover} alt={e.NewsName} style={window.innerWidth < 450 ? { height: `${window.innerWidth + 50}px` } : {}} />
                             <p dangerouslySetInnerHTML={{ __html: paragraphContent[index] || '' }}></p> {/* Massivdəki element index üzrə göstərilir */}
                             <button onClick={() => navigate(`/stories/${e.tema}-${e.id}`)}>Daha çox</button>
                         </div>

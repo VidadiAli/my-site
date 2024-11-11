@@ -118,3 +118,71 @@
     color: white;
     background-color: var(--color1);
 }
+
+
+
+@media(max-width: 1250px) {
+    .front-end>.front-end-cover>span {
+        font-size: 3.4rem;
+    }
+}
+
+
+@media(max-width: 1050px) {
+    .front-end {
+        padding: 0 10px;
+    }
+
+    .front-end>.front-end-cover {
+        height: 50vh;
+    }
+
+    .front-end>.packets>.online-course>div>div>span {
+        padding: 15px 20px;
+        font-size: .9rem;
+    }
+}
+
+
+@media(max-width: 750px) {
+    .front-end {
+        padding: 0 5px;
+    }
+
+    .front-end>.packets>.online-course>div>div {
+        gap: 10px;
+    }
+
+    .front-end>.packets>.online-course>div>div>span {
+        padding: 12px 17px;
+        font-size: .8rem;
+    }
+
+    .front-end>.packets>.online-course>div:last-child>div>button {
+        padding: 10px 20px;
+    }
+
+    .front-end>.packets>.online-course>div:last-child>div>a {
+        padding: 10px 20px;
+    }
+}
+
+
+@media(max-width: 550px) {
+    .front-end>.front-end-cover {
+        height: 40vh;
+    }
+
+    .front-end>.front-end-cover>span {
+        font-size: 2.8rem;
+    }
+}
+
+@media(max-width: 450px) {
+    .front-end>.front-end-cover {
+        height: 35vh;
+    }
+    .front-end>.front-end-cover>span {
+        font-size: 2.3rem;
+    }
+}
